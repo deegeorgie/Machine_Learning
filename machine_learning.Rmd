@@ -68,6 +68,7 @@ I use the algorithm to predict using the testing set. The results are run throug
 ```{r}
 pml.testing <- read.csv("~/pml-testing.csv")
 answers <- as.character(predict(modFit, pml.testing))
+
 pml_write_files = function(x){
   n = length(x)
   for(i in 1:n){
